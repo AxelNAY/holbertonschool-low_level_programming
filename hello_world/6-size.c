@@ -14,7 +14,7 @@
 
 int main(void)
 {
-  sizeof(6-size.c);
+sizeof();
 
 return (0);
 }
