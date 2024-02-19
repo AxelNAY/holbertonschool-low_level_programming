@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-Affichage de la phrase demander avec la fonction puts
+ * Affichage de la phrase demander avec la fonction puts
  */
 
 int main(void) {
