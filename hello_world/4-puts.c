@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc 4-puts.c -o 0 | puts('"Programming is like building a multilingual puzzle' + /n)
+gcc -o 4-puts_0 -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c | puts('"Programming is like building a multilingual puzzle' + /n)
