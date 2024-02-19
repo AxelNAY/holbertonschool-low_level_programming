@@ -1,6 +1,6 @@
 /*
  * File: 4-puts.c
- * Auth: Axel NAY <8763@holbertonschool.com>
+ * Auth: Axel Nay <8763@holbertonschool.com>
  */
 
 #include <stdio.h>
