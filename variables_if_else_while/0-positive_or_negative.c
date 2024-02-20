@@ -1,5 +1,5 @@
 /*
- * File: 4-print_alphabt.c
+ * File: 0-positive_or_negative.c
  * Auth: Axel Nay <8763@holbertonschool.com>
  */
 
