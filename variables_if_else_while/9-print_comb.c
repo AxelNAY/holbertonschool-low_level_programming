@@ -16,7 +16,10 @@ while (n <= 57)
 {
 putchar(n);
 if (n < 57)
-  putchar(', ');
+{
+putchar(44);
+putchar(32);
+}
 n++;
 }
 putchar('\n');
