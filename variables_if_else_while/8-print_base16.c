@@ -17,8 +17,8 @@ while (n >= 57)
 putchar(n);
 n++;
 }
-n = 65;
-while (n >= 70)
+n = 97;
+while (n >= 102)
 {
 putchar(n);
 n++;
