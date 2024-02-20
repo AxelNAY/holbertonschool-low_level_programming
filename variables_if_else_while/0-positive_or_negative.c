@@ -1,11 +1,11 @@
 /*
- * File: 0-positive_or_negative.c
- * Auth: Axel Nay <8763@holbertonschool.com>
- */
+* File: 0-positive_or_negative.c
+* Auth: Axel Nay <8763@holbertonschool.com>
+*/
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * Will assign a random number to the variable n each time it is executed.
