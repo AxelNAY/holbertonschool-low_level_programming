@@ -10,12 +10,12 @@
 
 int main(void)
 {
-int n = 48;
+int n = 0;
 int m;
-while (n < 57)
+while (n < 9)
 {
 m = n + 1;
-while (m < 58)
+while (m < 10)
 {
 putchar((n % 10) + '0');
 putchar((m % 10) + '0');
