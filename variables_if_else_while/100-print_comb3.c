@@ -11,21 +11,21 @@
 int main(void)
 {
 int n = 48;
-int m = 48;
+int m;
 while (n <= 57)
 {
-putchar(n);
-if (m == 57) {
-m = 48;
-n++;
-}
-putchar(m);
-if ((n < 57) || (m < 57))
+m = n + 1;
+while (m <= 57)
 {
+putchar((n % 10) + '0');
+putchar((m % 10) + '0');
+if (n == 8 && m == 9)
+continue;
 putchar(44);
 putchar(32);
-}
 m++;
+}
+n++;
 }
 putchar('\n');
 
