@@ -1,8 +1,3 @@
-/*
-* File: 0-positive_or_negative.c
-* Auth: Axel Nay <8763@holbertonschool.com>
-*/
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -24,11 +19,11 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n < 0)
-print(n, " is negative");
+printf("%d is negative\n", n);
 else if (n == 0)
-print(n, " is zero");
+printf("%d is zero\n", n);
 else if (n > 0)
-print(n, " is positive");
+printf("%d is positive\n", n);
 
 return (0);
 }
