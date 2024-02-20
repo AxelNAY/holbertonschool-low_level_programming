@@ -14,13 +14,12 @@ int n = 48;
 int m = 48;
 while (n <= 57)
 {
-if (m == 57) {
 putchar(n);
+if (m == 57) {
 m = 48;
 n++;
 }
 else
-putchar(n);
 putchar(m);
 if (n < 57)
 {
