@@ -23,11 +23,11 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n < 0)
-printf(n, " is negative");
+print(n, " is negative");
 else if (n == 0)
-printf(n, " is zero");
+print(n, " is zero");
 else if (n > 0)
-printf(n, " is positive");
+print(n, " is positive");
 
 return (0);
 }
