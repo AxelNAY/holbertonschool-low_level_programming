@@ -8,8 +8,7 @@
 #include <stdio.h>
 
 /**
- * Will assign a random number to the variable n each time it is executed.
- * Print whether the number
+ * main - Print whether the number
  * Stored in the variable n is positive or negative.
  *                puzzle, followed by a new line.
  *
