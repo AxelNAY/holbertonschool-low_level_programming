@@ -10,11 +10,6 @@
 
 int main(void)
 {
-int n = 97;
-
-while (n <= 122) {
+for (int n = 97; n <= 122; n++)
 putchar(n);
-n++;
-}
-
 }
