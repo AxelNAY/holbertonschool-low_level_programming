@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
-* _islower - return 1 if c is a letter and 0 otherwise,
+* _isalpha - return 1 if c is a letter and 0 otherwise,
 * followed by a new line.
 *
 * @c: Character to analyse.
