@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 
-/** 
+/**
 * _abs - absolute value.
 *
 * @c: Character to analyse.
