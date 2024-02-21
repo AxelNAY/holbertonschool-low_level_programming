@@ -5,7 +5,7 @@
 * print_alphabet - prints the alphabet in lowercase, followed by a new line.
 */
 
-int main(void)
+void print_alphabet(void)
 {
 int n = 97;
 while (n <= 122)
