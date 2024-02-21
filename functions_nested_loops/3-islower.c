@@ -3,12 +3,10 @@
 #include <ctype.h>
 
 /**
-* _islower - return 1 if c is lowercase and 0 otherwise,
+* _islower(@parameterc) - return 1 if c is lowercase and 0 otherwise,
 * followed by a new line.
 *
-* int c - character to enter.
-*
-* return - 1 if success or 0 otherwise.
+* Return: 1 if success or 0 otherwise.
 */
 
 int _islower(int c)
