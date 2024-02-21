@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "main.h"
+0;276;0c#include "main.h"
 
 /**
 * print_alphabet - prints the alphabet in lowercase ten times, followed by a new line.
@@ -20,5 +20,4 @@ m = 97;
 n++;
 _putchar('\n');
 }
-return (0);
 }
