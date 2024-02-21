@@ -5,7 +5,9 @@
 /**
 * _islower - return 1 if c is lowercase and 0 otherwise,
 * followed by a new line.
+*
 * int c - character to enter.
+*
 * return - 1 if success or 0 otherwise.
 */
 
