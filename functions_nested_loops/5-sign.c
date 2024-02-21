@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
-* _isalpha - return 1 if c is positive.
+* print_sign - return 1 if c is positive.
 * 0 if 0.
 * -1 if is negative.
 *
@@ -12,7 +12,7 @@
 * Return: 1 if success or 0 otherwise.
 */
 
-int _isalpha(int c)
+int print_sign(int c)
 {
 if (c > 0)
 {
