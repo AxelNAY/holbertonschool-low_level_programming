@@ -3,8 +3,10 @@
 #include <ctype.h>
 
 /**
-* _islower(@parameterc) - return 1 if c is lowercase and 0 otherwise,
+* _islower - return 1 if c is lowercase and 0 otherwise,
 * followed by a new line.
+*
+* @c: Character to analyse.
 *
 * Return: 1 if success or 0 otherwise.
 */
