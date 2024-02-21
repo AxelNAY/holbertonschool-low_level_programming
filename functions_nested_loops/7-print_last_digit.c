@@ -9,7 +9,7 @@
 * Return: Always a value.
 */
 
-int print_last_digit(int c);
+int print_last_digit(int c)
 {
 c = c % 10;
 putchar(c);
