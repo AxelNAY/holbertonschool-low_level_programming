@@ -20,4 +20,5 @@ m = 97;
 n++;
 _putchar('\n');
 }
+return (0);
 }
