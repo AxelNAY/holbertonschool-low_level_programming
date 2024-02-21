@@ -17,7 +17,7 @@ _putchar(m);
 m++;
 }
 m = 97;
-n++
+n++;
 }
 _putchar('\n');
 }
