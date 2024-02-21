@@ -5,6 +5,7 @@
 /**
 * _islower - return 1 if c is lowercase and 0 otherwise,
 * followed by a new line.
+* c - character to enter.
 */
 
 int _islower(int c)
