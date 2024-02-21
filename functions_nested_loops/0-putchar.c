@@ -1,17 +1,13 @@
 #include <unistd.h>
 #include "main.h"
-#include "main.c"
 
 /**
 * main - Prints _putchar.
 *
-* Return: Always 0.
+* Return: Always the value.
 */
 
-int main(void)
+int _putchar(char c)
 {
-putchar("_putchar");
-putchar('\n');
-
 return (0);
 }
