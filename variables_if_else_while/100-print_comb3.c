@@ -17,8 +17,8 @@ while (n < 9)
 m = n + 1;
 while (m < 10)
 {
-putchar((n % 10) + '0');
-putchar((m % 10) + '0');
+putchar(n % 10 + 48);
+putchar(m % 10 + 48);
 if (n == 8 && m == 9)
 continue;
 putchar(44);
