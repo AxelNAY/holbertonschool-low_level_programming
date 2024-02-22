@@ -23,12 +23,16 @@ _putchar(58);
 _putchar(m1);
 _putchar(m2);
 _putchar('\n');
-if (m2 <= 57)
+if (m2 == 57)
+{
 m1++;
+}
 m2++;
 }
-if (h2 <= 57)
+if (h2 == 57)
+{
 h1++;
+}
 h2++;
 }
 }
