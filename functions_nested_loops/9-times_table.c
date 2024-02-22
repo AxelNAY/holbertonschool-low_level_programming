@@ -20,7 +20,7 @@ else
 _putchar((i * j) / 10 + 48);
 _putchar((i * j) % 10 + 48);
 }
-if (j <= 9)
+if (j < 9)
 {
 _putchar(44);
 _putchar(32);
