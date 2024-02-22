@@ -11,6 +11,20 @@
 
 int print_last_digit(int c)
 {
-_putchar(c % 10);
+int i = 0;
+int n = 48;
+int l = c % 10;
+if (i != l)
+{
+while (i != l)
+{
+i++;
+n++;
+if (i == l)
+putchar(n);
+}
+}
+else
+_putchar(n);
 return (c);
 }
