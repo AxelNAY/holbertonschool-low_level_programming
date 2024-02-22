@@ -19,7 +19,7 @@ while (m < 10)
 {
 putchar(n % 10 + 48);
 putchar(m % 10 + 48);
-if (n == 8 && m == 9)
+if ((n == 8) && (m == 9))
 continue;
 putchar(44);
 putchar(32);
@@ -27,6 +27,6 @@ m++;
 }
 n++;
 }
-
+putchar('\n');
 return (0);
 }
