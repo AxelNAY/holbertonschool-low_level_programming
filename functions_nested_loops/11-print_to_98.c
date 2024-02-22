@@ -25,7 +25,6 @@ if (n > 98)
 if (n < 10)
 {
 _putchar(n + 48);
-_putchar(32);
 }
 else
 {
@@ -42,7 +41,6 @@ if (n > 0)
 if (n < 10)
 {
 _putchar(n + 48);
-_putchar(32);
 }
 else
 {
@@ -56,7 +54,6 @@ _putchar(45);
 if (n > -10)
 {
 _putchar(n + 48);
-_putchar(32);
 }
 else
 {
