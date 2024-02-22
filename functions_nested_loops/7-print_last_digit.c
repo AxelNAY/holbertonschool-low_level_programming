@@ -26,5 +26,5 @@ _putchar(n);
 }
 else
 _putchar(n);
-return (c);
+return (l);
 }
