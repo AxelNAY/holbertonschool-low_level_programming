@@ -14,6 +14,7 @@ if (n == 98)
 {
 _putchar(n / 10 + 48);
 _putchar(n % 10 + 48);
+_putchar('\n');
 }
 else
 {
@@ -62,6 +63,7 @@ else if (n == 98)
 {
 _putchar(n / 10 + 48);
 _putchar(n % 10 + 48);
+_putchar('\n');
 }
 }
 }
