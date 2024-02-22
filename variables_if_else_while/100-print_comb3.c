@@ -8,23 +8,23 @@
  */
 int main(void)
 {
-int n, m;
+int digit1, digit2;
 
-for (n = 0; m < 9; n++)
+for (digit1 = 0; digit1 < 9; digit1++)
 {
-for (m = n + 1; m < 10; m++)
+for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 {
-putchar((n % 10) + 48);
-putchar((m % 10) + 48);
+putchar((digit1 % 10) + '0');
+putchar((digit2 % 10) + '0');
 
-if (n == 8 && m == 9)
+if (digit1 == 8 && digit2 == 9)
 continue;
 
-putchar(44);
-putchar(32);
+putchar(',');
+putchar(' ');
 }
 }
-putchar('\n');
 
+putchar('\n');
 return (0);
 }
