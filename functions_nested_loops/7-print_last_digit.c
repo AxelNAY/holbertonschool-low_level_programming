@@ -14,6 +14,8 @@ int print_last_digit(int c)
 int i = 0;
 int n = 48;
 int l = c % 10;
+if (l < 0)
+l = -l;
 if (i != l)
 {
 while (i != l)
