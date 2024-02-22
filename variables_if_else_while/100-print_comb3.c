@@ -1,32 +1,30 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
-* main - Prints all possible combinations of single-digit numbers.
-*
-* Return: Always 0.
-*/
-
+ * main - Prints all possible combinations of two different digits,
+ *        in ascending order, separated by a comma followed by a space.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-int n = 0;
-int m;
-while (n < 9)
+int n, m;
+
+for (n = 0; m < 9; n++)
 {
-m = n + 1;
-while (m < 10)
+for (m = n + 1; m < 10; m++)
 {
-putchar(n % 10 + 48);
-putchar(m % 10 + 48);
-if ((n == 8) && (m == 9))
+putchar((n % 10) + 48);
+putchar((m % 10) + 48);
+
+if (n == 8 && m == 9)
 continue;
+
 putchar(44);
 putchar(32);
-m++;
 }
-n++;
 }
 putchar('\n');
+
 return (0);
 }
