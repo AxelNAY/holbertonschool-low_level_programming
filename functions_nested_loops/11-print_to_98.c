@@ -34,14 +34,16 @@ _putchar(n % 10 + 48);
 n--;
 }
 _putchar(44);
-_putchar(32);
 }
 else if (n < 98)
 {
 if (n > 0)
 {
 if (n < 10)
+{
 _putchar(n + 48);
+_putchar(32);
+}
 else
 {
 _putchar(n / 10 + 48);
@@ -63,7 +65,6 @@ _putchar(n % 10 + 48);
 }
 n++;
 _putchar(44);
-_putchar(32);
 }
 else if (n == 98)
 {
