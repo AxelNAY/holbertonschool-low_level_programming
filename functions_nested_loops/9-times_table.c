@@ -13,11 +13,17 @@ while (i < 10)
 int j = 0;
 while (j < 10)
 {
+  if ((i * j) < 10)
 _putchar((i * j) + 48);
+else
+{
+_putchar((i * j) / 10 + 48);
+_putchar((i * j) % 10 + 48);
+}
 if (j != 9)
 {
-_putchar(32);
 _putchar(44);
+_putchar(32);
 }
 j++;
 }
