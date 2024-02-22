@@ -1,35 +1,27 @@
 #include <unistd.h>
 #include "main.h"
 
-/**                                                                                                                                                                                 
-* jack_bauer - Display minutes.                                                                                                                                                     
+/**
+* times_table - Display the 9 tables.
 */
 
-void jack_bauer(void)
+void times_table(void)
 {
-int hour = 0;
-int m1;
-int m2;
-while (hour <= 23)
+int i = 0;
+while (i < 10)
 {
-m1 = 48;
-m2 = 48;
-while (m1 <= 53)
+int j = 0;
+while (j < 10)
 {
-_putchar(hour / 10 + 48);
-_putchar(hour % 10 + 48);
-_putchar(58);
-_putchar(m1);
-_putchar(m2);
+_putchar((i * j) + 48);
+if (j != 9)
+{
+_putchar(32);
+_putchar(44);
+}
+j++;
+}
 _putchar('\n');
-if (m2 == 57)
-{
-m1++;
-m2 = 48;
-}
-else
-m2++;
-}
-hour++;
+i++;
 }
 }
