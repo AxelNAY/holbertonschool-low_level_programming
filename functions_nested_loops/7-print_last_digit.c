@@ -21,7 +21,7 @@ while (i != l)
 i++;
 n++;
 if (i == l)
-putchar(n);
+_putchar(n);
 }
 }
 else
