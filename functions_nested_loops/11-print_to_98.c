@@ -26,12 +26,18 @@ if (n < 10)
 {
 _putchar(n + 48);
 }
+else if (n > 99)
+{
+_putchar(n / 100 + 48);
+_putchar(n / 10 + 48);
+_putchar(n % 10 + 48);
+}
 else
 {
 _putchar(n / 10 + 48);
 _putchar(n % 10 + 48);
-n--;
 }
+n--;
 _putchar(44);
 }
 else if (n < 98)
@@ -51,9 +57,15 @@ _putchar(n % 10 + 48);
 else if (n < 0)
 n = -n;
 _putchar(45);
-if (n > -10)
+if (n < 10)
 {
 _putchar(n + 48);
+}
+else if (n > 99)
+{
+_putchar(n / 100 + 48);
+_putchar(n / 10 + 48);
+_putchar(n % 10 + 48);
 }
 else
 {
