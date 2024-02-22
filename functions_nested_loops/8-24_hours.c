@@ -20,7 +20,7 @@ while ((m1 <= 53) && (m2 <= 57))
 {
 _putchar(m1);
 _putchar(m2);
-_putchar("\n");
+_putchar('\n');
 m1++;
 m2++;
 }
