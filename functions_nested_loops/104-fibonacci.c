@@ -9,9 +9,9 @@
 int main(void)
 {
 int i = 1;
-int fib1 = 0;
-int fib2 = 0;
-int fib3 = 1;
+long int fib1 = 0;
+long int fib2 = 0;
+long int fib3 = 1;
 while (i <= 98)
 {
 fib2 = fib3;
