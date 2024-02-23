@@ -8,7 +8,7 @@
 
 int main(void)
 {
-int i = 0;
+int i = 1;
 int fib1 = 0;
 int fib2 = 0;
 int fib3 = 1;
