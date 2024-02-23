@@ -10,14 +10,18 @@ int main(void)
 {
 int i = 0;
 int fib1 = 0;
-int fib2 = 1;
+int fib2 = 0;
+int fib3 = 1;
 while (i <= 50)
 {
-fib2 = fib2 + fib1;
+fib2 = fib3;
+fib3 = fib3 + fib1;
 fib1 = fib2;
 printf("%d", fib2);
-putchar('\n');
+putchar(44);
+putchar(32);
 i++;
 }
+putchar('\n');
 return (0);
 }
