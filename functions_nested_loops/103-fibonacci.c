@@ -12,19 +12,14 @@ int i = 1;
 long int fib1 = 0;
 long int fib2 = 0;
 long int fib3 = 1;
-while (i <= 50)
+while (i <= 10)
 {
 fib2 = fib3;
 fib3 = fib3 + fib1;
 fib1 = fib2;
-printf("%ld", fib3);
-if (i < 50)
-{
-putchar(44);
-putchar(32);
-}
 i++;
 }
+printf("%ld", fib3);
 putchar('\n');
 return (0);
 }
