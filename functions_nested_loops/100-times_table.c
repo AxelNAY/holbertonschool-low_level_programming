@@ -19,16 +19,23 @@ while (i < n)
 int j = 0;
 while (j < n)
 {
-if ((i * j) < 10)
+if ((i * j) > 99)
 {
-if (j > 0)
+_putchar((i * j) / 100 + 48);
+_putchar(((i * j) / 10) % 10 + 48);
+_putchar((i * j) % 10 +  48);
+}
+else if ((i * j) > 9)
+{
 _putchar(32);
-_putchar((i * j) + 48);
+_putchar((i * j) / 10 + 48);
+_putchar((i * j) % 10 + 48);
 }
 else
 {
-_putchar((i * j) / 10 + 48);
-_putchar((i * j) % 10 + 48);
+_putchar(32);
+_putchar(32);
+_putchar((i * j) + 48);
 }
 if (j < n)
 {
