@@ -16,8 +16,8 @@ else if ((i % 5) == 0)
 sum = sum + i;
 i++;
 }
-_putchar((sum / 10) % 10 + 48);
-_putchar(sum / 10 + 48);
-_putchar(sum % 10 + 48);
-_putchar('\n');
+putchar((sum / 10) % 10 + 48);
+putchar(sum / 10 + 48);
+putchar(sum % 10 + 48);
+putchar('\n');
 }
