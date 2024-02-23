@@ -17,7 +17,7 @@ while (i <= 98)
 fib2 = fib3;
 fib3 = fib3 + fib1;
 fib1 = fib2;
-printf("%ld", fib2);
+printf("%ld", fib3);
 if (i < 98)
 {
 putchar(44);
