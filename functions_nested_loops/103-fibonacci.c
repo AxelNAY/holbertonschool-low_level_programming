@@ -17,10 +17,8 @@ while (sum < 4000000)
 fib3 = fib2 + fib1;
 fib1 = fib2;
 fib2 = fib3;
-if ((fibsum % 2) == 0)
+if ((sum % 2) == 0)
 sum = sum + fib3;
-printf("%ld", sum);
-putchar('\n');
 }
 printf("%ld", sum);
 putchar('\n');
