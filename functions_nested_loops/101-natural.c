@@ -5,7 +5,7 @@
 * main - print all the multiple of 3 and 5.
 */
 
-int main(void)
+void main(void)
 {
 int i = 0;
 while (i <= 1024)
