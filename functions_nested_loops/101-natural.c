@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
-* main - print all the multiple of 3 and 5.
+* natural - print all the multiple of 3 and 5.
 */
 
-void main(void)
+void natural(void)
 {
 int i = 0;
 while (i <= 1024)
