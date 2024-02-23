@@ -18,8 +18,11 @@ fib2 = fib3;
 fib3 = fib3 + fib1;
 fib1 = fib2;
 printf("%d", fib2);
+if (i < 50)
+{
 putchar(44);
 putchar(32);
+}
 i++;
 }
 putchar('\n');
