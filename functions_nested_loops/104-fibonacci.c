@@ -18,7 +18,7 @@ fib2 = fib3;
 fib3 = fib3 + fib1;
 fib1 = fib2;
 printf("%d", fib2);
-if (i < 50)
+if (i < 98)
 {
 putchar(44);
 putchar(32);
