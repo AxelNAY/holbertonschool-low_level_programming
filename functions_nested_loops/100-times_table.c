@@ -9,7 +9,7 @@
 * Return: return the sum
 */
 
-void print_times_table(int n);
+void print_times_table(int n)
 {
 int i = 0;
 if ((n > 15) || (n < 0))
