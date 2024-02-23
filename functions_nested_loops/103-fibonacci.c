@@ -19,6 +19,8 @@ fib1 = fib2;
 fib2 = fib3;
 if ((fibsum % 2) == 0)
 sum = sum + fib3;
+printf("%ld", sum);
+putchar('\n');
 }
 printf("%ld", sum);
 putchar('\n');
