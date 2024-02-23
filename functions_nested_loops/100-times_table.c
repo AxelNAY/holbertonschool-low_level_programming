@@ -17,43 +17,6 @@ if (n == 0)
 _putchar(n + 48);
 _putchar('\n');
 }
-
-else if ((n < 10 && (n > 0))
-{
-while (i <= n)
-{
-int j = 0;
-while (j <= n)
-{
-if ((i * j) > 9)
-{
-_putchar(32);
-_putchar((i * j) / 10 + 48);
-_putchar((i * j) % 10 + 48);
-}
-else
-{
-if (j > 0)
-{
-_putchar(32);
-_putchar(32);
-_putchar((i * j) + 48);
-}
-else
-_putchar((i * j) + 48);
-if (j < n)
-{
-_putchar(44);
-_putchar(32);
-}
-j++;
-}
-i++;
-_putchar('\n');
-}
-}
-}
-
 else if ((n < 15) && (n > 0))
 {
 while (i <= n)
@@ -74,7 +37,16 @@ _putchar((i * j) / 10 + 48);
 _putchar((i * j) % 10 + 48);
 }
 else
+{
+if (j > 0)
+{
+_putchar(32);
+_putchar(32);
 _putchar((i * j) + 48);
+}
+else
+_putchar((i * j) + 48);
+}
 if (j < n)
 {
 _putchar(44);
