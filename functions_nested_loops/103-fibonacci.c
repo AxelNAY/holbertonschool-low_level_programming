@@ -12,13 +12,15 @@ long int fib1 = 0;
 long int fib2 = 1;
 long int fib3;
 long int sum = 0;
-while (sum < 4000000)
+while (1)
 {
-fib3 = fib2 + fib1;
+fibsum = fib1 + fib2;
+if (fibsum > 4000000)
+break;
+if ((fibsum % 2) == 0)
+sum += fib3;
 fib1 = fib2;
 fib2 = fib3;
-if ((sum % 2) == 0)
-sum = sum + fib3;
 }
 printf("%ld", sum);
 putchar('\n');
