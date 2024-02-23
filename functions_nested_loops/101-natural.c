@@ -2,6 +2,8 @@
 
 /**
 * main - print all the multiple of 3 and 5.
+*
+* Return: 0.
 */
 
 int main(void)
@@ -20,4 +22,5 @@ putchar((sum / 10) % 10 + 48);
 putchar(sum / 10 + 48);
 putchar(sum % 10 + 48);
 putchar('\n');
+return (0);
 }
