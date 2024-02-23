@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - print all the multiple of 3 and 5.
+* main - print the 50 first number of Fibonacci.
 *
 * Return: 0.
 */
@@ -9,21 +9,15 @@
 int main(void)
 {
 int i = 0;
-int sum = 0;
-while (i <= 1024)
+int fib1 = 0;
+int fib2 = 1;
+while (i <= 50)
 {
-if ((i % 3) == 0)
-sum = sum + i;
-else if ((i % 5) == 0)
-sum = sum + i;
+fib2 = fib2 + fib1;
+fib1 = fib2;
+printf("%d", fib2);
+putchar('\n');
 i++;
 }
-putchar((sum / 100) % 10 + 48);
-putchar((sum / 1000) % 10 + 48);
-putchar((sum / 10000) % 10 + 48);
-putchar((sum / 100) % 10 + 48);
-putchar((sum / 10) % 10 + 48);
-putchar(sum % 10 + 48);
-putchar('\n');
 return (0);
 }
