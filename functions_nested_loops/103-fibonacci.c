@@ -9,14 +9,15 @@
 int main(void)
 {
 long int fib1 = 0;
-long int fib2 = 0;
-long int fib3 = 1;
+long int fib2 = 1;
+long int fib3;
 long int sum = 0;
 while (sum < 4000000)
 {
-fib2 = fib3;
-fib3 = fib3 + fib1;
+fib3 = fib2 + fib1;
 fib1 = fib2;
+fib2 = fib3;
+if ((fibsum % 2) == 0)
 sum = sum + fib3;
 }
 printf("%ld", sum);
