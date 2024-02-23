@@ -18,6 +18,9 @@ else if ((i % 5) == 0)
 sum = sum + i;
 i++;
 }
+putchar((sum / 10000) % 10 + 48);
+putchar((sum / 1000) % 10 + 48);
+putchar((sum / 100) % 10 + 48);
 putchar((sum / 10) % 10 + 48);
 putchar(sum / 10 + 48);
 putchar(sum % 10 + 48);
