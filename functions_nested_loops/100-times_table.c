@@ -14,10 +14,10 @@ void print_times_table(int n)
 int i = 0;
 if ((n < 15) && (n > 0))
 {
-while (i < n)
+while (i <= n)
 {
 int j = 0;
-while (j < n)
+while (j <= n)
 {
 if ((i * j) > 99)
 {
@@ -33,8 +33,13 @@ _putchar((i * j) % 10 + 48);
 }
 else
 {
+if (j > 0)
+{
 _putchar(32);
 _putchar(32);
+_putchar((i * j) + 48);
+}
+else
 _putchar((i * j) + 48);
 }
 if (j < n)
