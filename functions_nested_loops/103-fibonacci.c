@@ -13,7 +13,7 @@ long int fib1 = 0;
 long int fib2 = 0;
 long int fib3 = 1;
 long int sum = 0;
-while (i <= 10)
+while (i <= 50)
 {
 fib2 = fib3;
 fib3 = fib3 + fib1;
