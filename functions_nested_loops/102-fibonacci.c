@@ -17,7 +17,7 @@ while (i <= 50)
 fib2 = fib3;
 fib3 = fib3 + fib1;
 fib1 = fib2;
-printf("%d", fib2);
+printf("%d", fib3);
 if (i < 50)
 {
 putchar(44);
