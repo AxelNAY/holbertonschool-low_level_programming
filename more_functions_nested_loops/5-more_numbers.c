@@ -15,7 +15,7 @@ _putchar(c1);
 if ((c1 == 49) && (c2 != 47))
 {
 _putchar(c2);
-c2++
+c2++;
 }
 else if (c1 == 57)
 {
