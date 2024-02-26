@@ -6,9 +6,9 @@
 *
 * @a: first number.
 *
-* @b: second number.   
+* @b: second number.
 *
-* Return: 1 if success or 0 otherwise.
+* Return: result.
 */
 
 int mul(int a, int b)
