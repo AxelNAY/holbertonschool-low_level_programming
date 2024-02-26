@@ -11,6 +11,7 @@ int c = 48;
 while (c < 58)
 {
 putchar(c);
+c++;
 }
 putchar('\n');
 }
