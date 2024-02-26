@@ -22,6 +22,7 @@ else
 printf("%d", i);
 if (i < 100)
 putchar(32);
+i++;
 }
 putchar('\n');
 return (0);
