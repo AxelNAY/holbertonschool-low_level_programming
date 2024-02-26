@@ -23,6 +23,6 @@ printf("%d", i);
 if (i < 100)
 putchar(32);
 }
-_putchar('\n');
+putchar('\n');
 return (0);
 }
