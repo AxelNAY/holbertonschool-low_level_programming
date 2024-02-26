@@ -4,15 +4,15 @@
 /**
 * _isupper - checks numbers
 *
-* @c: Character to analyse.
+* @a: first number.
+*
+* @b: second number.   
 *
 * Return: 1 if success or 0 otherwise.
 */
 
-int _isdigit(int c)
+int mul(int a, int b)
 {
-if ((c >= 48) && (c <= 57))
-return (1);
-else
+int mul = a * b;
 return (0);
 }
