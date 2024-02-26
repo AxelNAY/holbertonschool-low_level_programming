@@ -9,7 +9,7 @@ void more_numbers(void)
 {
 int c1 = 48;
 int c2 = 48;
-while ((c1 != 49) && (c2 < 53))
+while ((c1 != 49) || (c2 < 53))
 {
 _putchar(c1);
 if ((c1 == 49) && (c2 != 48))
