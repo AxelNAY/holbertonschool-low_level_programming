@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
-* _isupper - checks numbers
+* mul - multiplication
 *
 * @a: first number.
 *
 * @b: second number.
 *
-* Return: result.
+* Return: result of a multiplie by b.
 */
 
 int mul(int a, int b)
