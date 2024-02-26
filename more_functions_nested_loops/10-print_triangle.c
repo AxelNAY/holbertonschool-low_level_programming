@@ -7,7 +7,7 @@
 * @size: number of times for triangle
 */
 
-void print_triange(int size)
+void print_triangle(int size)
 {
 if (size <= 0)
 _putchar('\n');
