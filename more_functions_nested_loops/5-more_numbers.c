@@ -7,6 +7,9 @@
 
 void more_numbers(void)
 {
+int i = 0;
+while (i < 10)
+{
 int c1 = 48;
 int c2 = 47;
 while ((c1 != 49) || (c2 < 53))
@@ -26,4 +29,6 @@ else
 c1++;
 }
 _putchar('\n');
+}
+i++;
 }
