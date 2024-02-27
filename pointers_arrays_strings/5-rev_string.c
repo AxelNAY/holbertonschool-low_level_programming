@@ -15,5 +15,5 @@ char *p;
 while (s[len])
 len++;
 for (i = len - 1; i >= 0; i--)
-p = s[i];
+p = &s[i];
 }
