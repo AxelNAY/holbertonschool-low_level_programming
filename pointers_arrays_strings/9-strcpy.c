@@ -17,7 +17,7 @@ while (src[len])
 len++;
 for (i = 0; i < len; i++)
 {
-dest = src[i];
+dest[i] = src[i];
 }
 return (dest);
 }
