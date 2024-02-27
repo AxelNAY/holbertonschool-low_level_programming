@@ -12,20 +12,13 @@
 
 void print_array(int *a, int n)
 {
-int len = 0;
-int i;
-while (a[len])
-len++;
-for (i = 0; i < len; i++)
-{
-if (i == n)
+for (int i = 0; i < n; i++)
 {
 _putchar(a[i]);
-if (i < (len - 1))
+if (i < (n - 1))
 {
 _putchar(44);
 _putchar(32);
-}
 }
 }
 _putchar('\n');
