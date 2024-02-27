@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _strcpy - copy all the data from src and dest.
+* *_strcpy - copy all the data from src and dest.
 *
 * @dest: destination
 *
