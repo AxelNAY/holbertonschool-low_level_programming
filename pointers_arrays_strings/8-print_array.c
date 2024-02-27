@@ -21,8 +21,11 @@ for (i = 0; i < len; i++)
 if (i == n)
 {
 _putchar(a[i]);
+if (i < (len - 1))
+{
 _putchar(44);
 _putchar(32);
+}
 }
 }
 _putchar('\n');
