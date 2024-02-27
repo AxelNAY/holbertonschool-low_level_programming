@@ -7,12 +7,17 @@
 * @dest: destination
 *
 * @src: source
+*
+* Return: retun the copy pointer.
 */
 
 char *_strcpy(char *dest, char *src)
 {
-int i;
-for (i = 0; src[i]; i++)
+int i = 0;
+while (src[i])
+{
 dest[i] = src[i];
+i++;
+}
 return (dest);
 }
