@@ -15,7 +15,7 @@ int len = 0;
 int i;
 while (src[len])
 len++;
-for (i = 0; i < len; i++;)
+for (i = 0; i < len; i++)
 {
 dest = src[i];
 }
