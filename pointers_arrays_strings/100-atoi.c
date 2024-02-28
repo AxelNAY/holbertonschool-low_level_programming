@@ -9,15 +9,15 @@
 
 int _atoi(char *s)
 {
-int np = 1;
+int neg_pos = 1;
 int n = 0;
 
 while (*s)
 {
 if (*s == '-')
-np *= -1;
+neg_pos *= -1;
 else if ((*s >= '0') && (*s <= '9'))
 n = (n * 10) + (*s - '0');
 }
-return (n * np);
+return (n * neg_pos);
 }
