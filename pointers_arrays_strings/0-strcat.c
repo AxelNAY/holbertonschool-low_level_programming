@@ -18,7 +18,7 @@ int leng = 0;
 
 while (*src++);
 leng++; 
-for (i = 0; i <= (leng - 1); i++)
+for (i = 0; src[i] && i <= (leng - 1); i++)
 {
 dest[leng++] = src[i];
 }
