@@ -13,7 +13,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-char *newdest = *dest;
+char *newdest = dest;
 
 while (*src != '\0')
 {
