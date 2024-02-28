@@ -20,7 +20,7 @@ while (*src++);
 leng++; 
 for (i = 0; i <= (leng - 1); i++)
 {
-dest[leng] = src[i];
+dest[leng++] = src[i];
 }
 *dest = '\0';
 return (dest);
