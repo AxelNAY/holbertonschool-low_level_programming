@@ -13,12 +13,14 @@
 
 char *_strcpy(char *dest, char *src)
 {
-int i = 0;
+char *newdest = *dest;
+
 while (*src != '\0')
 {
-dest[i] = src[i];
-i++;
+*dest = *src;
+dest++;
+src++;
 }
 *dest = '\0';
-return (dest);
+return (newdest);
 }
