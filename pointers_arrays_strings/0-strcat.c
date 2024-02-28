@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* *_strcpy - conconate two strings.
+* _strcat - conconate two strings.
 *
 * @dest: destination
 *
