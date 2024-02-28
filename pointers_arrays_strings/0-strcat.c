@@ -23,7 +23,7 @@ while (dest[i++]);
 dest_leng++; 
 for (i = 0; src[i] && i < src_leng; i++)
 {
-dest[leng++] = src[i];
+dest[dest_leng++] = src[i];
 }
 return (dest);
 }
