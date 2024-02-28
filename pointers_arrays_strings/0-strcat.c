@@ -2,23 +2,26 @@
 #include <stdio.h>
 
 /**
-* *_strcpy - copy all the data from src and dest.
+* *_strcpy - conconate two strings.
 *
 * @dest: destination
 *
 * @src: source
 *
-* Return: retun the copy pointer.
+* Return: resulting string dest.
 */
 
 char *_strcat(char *dest, char *src)
 {
 int i;
-int leng = 0;
+int src_leng = 0;
+int dest_leng = 0;
 
+while (*src++)
+src_leng++;
 while (dest[i++]);
-leng++; 
-for (i = 0; src[i] && i <= (leng - 1); i++)
+dest_leng++; 
+for (i = 0; src[i] && i < src_leng; i++)
 {
 dest[leng++] = src[i];
 }
