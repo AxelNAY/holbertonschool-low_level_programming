@@ -4,7 +4,7 @@
 /**
 * reverse_array - reverse a string until n
 *
-* @s: pointer s
+* @a: pointer a
 *
 * @n: number of time
 */
