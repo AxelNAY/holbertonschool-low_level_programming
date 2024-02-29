@@ -16,9 +16,9 @@ int j = 0;
 char p;
 for (i = n - 1; i >= n / 2; i--)
 {
-p = s[i];
-s[i] = s[j];
-s[j] = p;
+p = a[i];
+a[i] = a[j];
+a[j] = p;
 j++;
 }
 }
