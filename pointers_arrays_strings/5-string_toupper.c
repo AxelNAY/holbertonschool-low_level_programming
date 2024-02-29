@@ -12,8 +12,8 @@
 char *string_toupper(char *t)
 {
 int i;
-for (i = 0; t[i] <= '\0'; i++)
-if (t[i] >= 'a' && t[i] <= 'z')
+for (i = 0; t[i] != '\0'; i++)
+if (t[i] >= 97 && t[i] <= 122)
 t[i] = t[i] - 32;
 return (t);
 }
