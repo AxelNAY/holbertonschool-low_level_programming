@@ -2,26 +2,18 @@
 #include <stdio.h>
 
 /**
-* _strncpy - copy a string.
+* string_toupper - changes all lowercase letters of a string to uppercase.
 *
-* @dest: destination
+* @t: pointer t
 *
-* @src: source
-*
-* @n: number of bytes from src
-*
-* Return: copy string dest.
+* Return: result
 */
 
-char *_strncpy(char *dest, char *src, int n)
+char *string_toupper(char *t)
 {
-int i = 0;
-int len = 0;
-while (src[i++])
-len++;
-for (i = 0; src[i] && i < n; i++)
-dest[i] = src[i];
-for (i = len; i < n; i++)
-dest[i] = '\0';
-return (dest);
+int i;
+for (i = 0; t[i] <= '\0'; i++)
+if (t[i] >= 97 && t[i] <= 122)
+t[i] = t[i] - 32;
+return (t);
 }
