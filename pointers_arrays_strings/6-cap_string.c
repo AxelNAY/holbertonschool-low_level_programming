@@ -9,7 +9,7 @@
 * Return: result
 */
 
-char *cap_string(char *c);
+char *cap_string(char *c)
 {
 int i;
 char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
