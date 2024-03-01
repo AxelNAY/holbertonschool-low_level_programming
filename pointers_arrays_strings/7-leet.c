@@ -17,14 +17,14 @@ char let[10] = {'a', 'A', 'E', 'e', 'O', 'o'
 int num[10] = {'4', '4', '3', '3', '0', '0'
 , '7', '7', '1', '1'};
 
- for (i = 0; c[i]; i++)
-   {
-     int j;
-     for (j = 0; j < 11; j++)
-       {
-	 if (c[i] == let[j])
-	   c[i] = num[j];
-       }
-   }
- return (c);
+for (i = 0; c[i]; i++)
+{
+int j;
+for (j = 0; j < 11; j++)
+{
+if (c[i] == let[j])
+c[i] = num[j];
+}
+}
+return (c);
 }
