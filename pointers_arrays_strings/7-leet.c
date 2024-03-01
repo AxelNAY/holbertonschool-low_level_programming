@@ -23,7 +23,10 @@ char num[5] = {'4', '3', '0', '7', '1'};
   for (j = 0, k = 0; let[j] != '\0' || j % 2 == 0; j++, k++)
    {
      if (c[i] == let[j])
-       c[i] = num[k];
+       {
+	 c[i] = num[k];
+	 k = 0;
+       }
    }
    }
 return (c);
