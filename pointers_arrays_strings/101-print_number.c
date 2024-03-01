@@ -7,7 +7,7 @@
 * @n: integer n
 */
 
-void print_number(int n);
+void print_number(int n)
 {
 int i;
 unsigned int dec;
