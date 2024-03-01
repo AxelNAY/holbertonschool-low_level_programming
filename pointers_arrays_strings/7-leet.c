@@ -19,14 +19,15 @@ char num[5] = {'4', '3', '0', '7', '1'};
  for (i = 0; c[i] != '\0'; i++)
    {
   int j;
-  int k;
-  for (j = 0, k = 0; let[j] != '\0' || j % 2 == 0; j++, k++)
+  int k = 0;;
+  for (j = 0; let[j] != '\0'; j++)
    {
      if (c[i] == let[j])
        {
 	 c[i] = num[k];
-	 k = 0;
        }
+     else
+       k = k + 0.5;
    }
    }
 return (c);
