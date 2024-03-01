@@ -26,5 +26,5 @@ char num[10] = {'4', '4', '3', '3', '0', '0'
 	   c[i] = num[j];
        }
    }
- return (c)
+ return (c);
 }
