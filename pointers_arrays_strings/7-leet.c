@@ -20,14 +20,11 @@ char let[10] = {'a', 'A', 'E', 'e', 'O', 'o'
  for (i = 0; c[i] != '\0'; i++)
    {
   int j;
-  int k = 0;
-  for (j = 0; let[j] != '\0'; j++)
+  int k;
+  for (j = 0, k = 0; let[j] != '\0'; j++, k++)
    {
      if (c[i] == let[j])
-       {
-	 c[i] = num[k];
-       }
-     k++;
+       c[i] = num[k];
    }
    }
 return (c);
