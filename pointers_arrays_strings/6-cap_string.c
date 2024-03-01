@@ -28,5 +28,5 @@ c[i + 1] = c[i + 1] - 32;
 }
 }
 }
-return(c);
+return (c);
 }
