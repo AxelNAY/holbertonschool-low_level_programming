@@ -20,7 +20,7 @@ char num[10] = {'4', '4', '3', '3', '0', '0'
  for (i = 0; c[i]; i++)
    {
      int j;
-     for (j = 0; j <= 10; j++)
+     for (j = 0; j < 11; j++)
        {
 	 if (c[i] == let[j])
 	   c[i] = num[j];
