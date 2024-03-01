@@ -22,5 +22,5 @@ for (i = 0; c[i] != '\0'; i++)
 	  c[i] = c[i] - 32;
       }
   }
-return(*c);
+return(c);
 }
