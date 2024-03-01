@@ -19,7 +19,7 @@ for (i = 0; c[i] != '\0'; i++)
     for (j = 0; sep[j] != '\0'; j++)
       {
 	if (c[i] == sep[j])
-	  c[i] = c[i] - 32;
+	  c[i + 1] = c[i + 1] - 32;
       }
   }
 return(c);
