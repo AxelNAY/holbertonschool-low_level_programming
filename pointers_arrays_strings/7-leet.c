@@ -9,7 +9,7 @@
 * Return: result
 */
 
-char *leet(char *c);
+char *leet(char *c)
 {
 int i;
 char let[10] = {'a', 'A', 'E', 'e', 'O', 'o'
