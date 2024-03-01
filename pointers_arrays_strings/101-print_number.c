@@ -36,7 +36,7 @@ for (i = 0; i < c - 1; i++)
 mult *= 10;
 for (i = 0; i < c; i++)
 {
-_putchar((abs / mult) + '0');
+_putchar((abs / mult)+'0');
 abs = abs % mult;
 mult /= 10;
 }
