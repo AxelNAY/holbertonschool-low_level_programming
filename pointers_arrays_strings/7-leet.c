@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* leet - capitalizes all words of a string.
+* leet - encodes a string into 1337.
 *
 * @c: pointer c
 *
