@@ -14,7 +14,6 @@ unsigned int dec;
 int mult = 1;
 unsigned int abs;
 int c = 0;
-int dec;
 if (n == 0)
 putchar(48);
 else if (n < 0)
