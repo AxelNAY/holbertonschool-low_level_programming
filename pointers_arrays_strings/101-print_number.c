@@ -20,6 +20,7 @@ else if (n < 0)
 {
 putchar(48);
 n = n * -1;
+n = n + 1;
 }
 abs = n;
 dec = n;
