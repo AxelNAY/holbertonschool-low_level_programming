@@ -28,7 +28,10 @@ int j;
 for (j = 0; alph[j] != '\0'; j++)
 {
 if (c[i] == alph[j])
+{
 c[i] = rot[j];
+break;
+}
 }
 }
 return (c);
