@@ -27,7 +27,7 @@ for (i = 0; c[i]; i++)
 int j;
 for (j = 0; j <= 52; j++)
 {
-if (c[i] == alph[i])
+if (c[i] == alph[j])
 c[i] = rot[j];
 }
 }
