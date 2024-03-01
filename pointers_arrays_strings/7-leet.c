@@ -14,12 +14,12 @@ char *leet(char *c)
 int i;
 char let[10] = {'a', 'A', 'E', 'e', 'O', 'o'
 , 'T', 't', 'L', 'l'};
-int num[5] = {'4', '3', '0', '7', '1'};
+float num[5] = {'4', '3', '0', '7', '1'};
 
  for (i = 0; c[i] != '\0'; i++)
    {
   int j;
-  int k = 0;
+  float k = 0;
   for (j = 0; let[j] != '\0'; j++)
    {
      if (c[i] == let[j])
