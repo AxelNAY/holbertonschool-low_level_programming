@@ -9,7 +9,7 @@
 
 int main(void)
 {
-unsigned int i = 0;
+unsigned int i = 2;
 unsigned long num = 612852475143;
 
 while (i != num)
