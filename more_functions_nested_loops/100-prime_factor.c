@@ -19,11 +19,8 @@ if (num % i == 0)
 num = num / i;
 }
 else
-{
 i++;
-}
 }
 printf("%lu\n", num);
 return (0);
-}
 }
