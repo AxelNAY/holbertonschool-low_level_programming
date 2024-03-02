@@ -11,8 +11,8 @@ int main(void)
 {
 int i = 0;
 unsigned long num = 612852475143;
-double res;
-while (i <= num)
+
+while (i != num)
 {
 if (num % i == 0)
 {
