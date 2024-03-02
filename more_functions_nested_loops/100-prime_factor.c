@@ -10,7 +10,7 @@
 int main(void)
 {
 int i = 0;
-double num = 612852475143;
+unsigned long num = 612852475143;
 double res;
 while (i <= num)
 {
