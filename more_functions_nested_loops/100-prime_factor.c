@@ -12,9 +12,18 @@ int main(void)
 int i = 0;
 double num = 612852475143;
 double res;
-while ((num % 2) == 0)
+while (i <= num)
 {
-num = num / 2;
-res = num;
+if (num % i == 0)
+{
+num = num / i;
+}
+else
+{
+i++;
+}
+}
+printf("%lu\n", num);
+return (0);
 }
 }
