@@ -20,5 +20,5 @@ for (i = 0; s[i] != '\0'; i++)
  if (res != '0')
    return (res);
  else
-   return (NULL);
+   return ('\0');
 }
