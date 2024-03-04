@@ -14,11 +14,10 @@ unsigned int i;
  int res = -1;
 for (i = 0; s[i] != '\0'; i++)
 {
-  if (s[i] == c)
+  if (s[i] == c && res == -1)
     res = i;
 }
  if (res != -1)
    return (&s[res]);
- else
-   return ('\0');
+return ('\0');
 }
