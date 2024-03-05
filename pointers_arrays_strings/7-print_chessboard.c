@@ -2,20 +2,20 @@
 
 /**
 * _strpbrk - prints the chessboard.
-* @s: string.
-* @accept: substring.
+* @s: chessboard.
 * Return: pointer s.
 */
 
 void print_chessboard(char (*a)[8])
 {
 int i, j;
-for (i = 0; a[i]; i++)
+for (i = 0; i < 8; i++)
 {
 for (j = 0; j < 8; j++)
 {
-  printf (a[i][j]);
+_putchar((*(a + i))[j]);
 }
+_putchar('\n');
 }
-return ('\0');
+Return ('\0');
 }
