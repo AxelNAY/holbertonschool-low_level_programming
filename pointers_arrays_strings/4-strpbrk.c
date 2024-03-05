@@ -16,8 +16,8 @@ if (s[i] != 32)
 {
 for (j = 0; accept[j] != '\0'; j++)
 {
-if (accept[j] == s[i])
-return (s);
+if (s[i] == accept[j])
+return (accept);
 }
 }
 }
