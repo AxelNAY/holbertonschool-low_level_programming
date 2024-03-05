@@ -10,13 +10,19 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int len = 0;
-while (*s++)
+int i, j;
+for (i = 0; s[i] != '\0'; i++)
 {
-while (*accept++)
+if (s[i] != 32)
 {
-if (*s == *accept)
+for (j = 0; accept[j] != '\0'; j++)
+{
+if (accept[j] == s[i])
 len++;
 }
+}
+else
+return(len);
 }
 return (len);
 }
