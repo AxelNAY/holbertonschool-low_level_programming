@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strpbrk - prints the chessboard.
+* print_chessboard - prints the chessboard.
 * @s: chessboard.
 * Return: pointer s.
 */
