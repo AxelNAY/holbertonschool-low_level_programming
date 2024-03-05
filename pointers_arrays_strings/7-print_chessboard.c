@@ -17,5 +17,4 @@ _putchar((*(a + i))[j]);
 }
 _putchar('\n');
 }
-Return ('\0');
 }
