@@ -18,6 +18,5 @@ while (i > 0)
 n = n *i;
 i--;
 }
-n = n - 1;
-return (n + factorial(0));
+return (n * factorial(0));
 }
