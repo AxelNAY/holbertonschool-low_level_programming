@@ -6,7 +6,7 @@
  * Return: factorial of n or -1 is n < 0.
  */
 
-int factorial(int n);
+int factorial(int n)
 {
 int i = n - 1;
 if (n == 0)
@@ -15,7 +15,7 @@ else if (n < 0)
 return (-1);
 while (i > 0)
 {
-n = n * i;
+n = n *i;
 i--;
 }
 n = n - 1;
