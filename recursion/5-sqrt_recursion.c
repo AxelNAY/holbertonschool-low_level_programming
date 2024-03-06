@@ -14,7 +14,7 @@ return (root);
 else if (root * root < n)
 return (operation(n, root + 1));
 else
-return (operation(n, root - 1));
+return (-1);
 }
 
 /**
