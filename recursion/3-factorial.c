@@ -8,15 +8,9 @@
 
 int factorial(int n)
 {
-int i = n - 1;
 if (n == 0)
 return (1);
 else if (n < 0)
 return (-1);
-while (i > 0)
-{
-n = n *i;
-i--;
-}
-return (n * factorial(0));
+return (n * factorial(n - 1));
 }
