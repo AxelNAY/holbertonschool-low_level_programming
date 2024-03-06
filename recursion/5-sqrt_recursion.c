@@ -9,12 +9,12 @@
 
 int operation(int n, int root)
 {
-  if (root * root == n)
-    return (root);
-  else if (root * root < n)
-    return (operation(n, root + 1));
-  else if (root * root > n)
-    return (operation(n, root - 1));
+if (root * root == n)
+return (root);
+else if (root * root < n)
+return (operation(n, root + 1));
+else
+return (operation(n, root - 1));
 }
 
 /**
@@ -25,9 +25,7 @@ int operation(int n, int root)
 
 int _sqrt_recursion(int n)
 {
-if (n == 0)
-return (0);
-else if (n < 0)
+if (n < 0)
 return (-1);
 return (operation(n, 1));
 }
