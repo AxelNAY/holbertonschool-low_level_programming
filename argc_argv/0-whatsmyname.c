@@ -1,13 +1,15 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints its name, followed by a new line.
+ * @argc: number of arguments passed to the function.
+ * @argv: argument vector of pointers to strings.
  * Return: Always 0.
  */
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-_putchar(argv[0]);
-_putchar('\n');
+printf("%s/n", argv[0]);
 return (0);
 }
