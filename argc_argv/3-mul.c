@@ -16,7 +16,11 @@ return (1);
 }
 else
 {
-printf("%s\n", argv[0] * argv[1]);
+int res, mul1, mul2;
+mul1 = atoi(argv[0]);
+mul2 = atoi(argv[1]);
+res = mul1 * mul2;
+printf("%d\n", res);
 return (0);
 }
 }
