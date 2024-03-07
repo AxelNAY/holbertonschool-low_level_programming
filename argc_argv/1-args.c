@@ -9,14 +9,6 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-  int count;
-  if (argc > 1)
-    {
-      for (count = 1; count < argc; count++)
-	{
-	  ;
-	}
-      printf("%d\n", count);
-    }
+  printf("%d\n", argc);
   return (0);
 }
