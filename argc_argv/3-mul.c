@@ -42,7 +42,7 @@ else
 int res, mul1, mul2;
 mul1 = _atoi(argv[1]);
 mul2 = _atoi(argv[2]);
-res = mul1 * mul2;
+res = mul1 *mul2;
 printf("%d\n", res);
 return (0);
 }
