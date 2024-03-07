@@ -32,7 +32,7 @@ return (n *neg_pos);
 
 int main(int argc, char *argv[])
 {
-if (argc != 2)
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
@@ -40,8 +40,8 @@ return (1);
 else
 {
 int res, mul1, mul2;
-mul1 = _atoi(argv[0]);
-mul2 = _atoi(argv[1]);
+mul1 = _atoi(argv[1]);
+mul2 = _atoi(argv[2]);
 res = mul1 * mul2;
 printf("%d\n", res);
 return (0);
