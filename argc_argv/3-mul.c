@@ -1,4 +1,27 @@
+#include "main.h"
 #include <stdio.h>
+
+/**
+* _atoi - Converts a string to an integer.
+* @s: pointer s.
+*
+* Return: Values or 0
+*/
+
+int _atoi(char *s)
+{
+int neg_pos = 1;
+unsigned int n = 0;
+do {
+if (*s == '-')
+neg_pos *= -1;
+else if (*s >= '0' && *s <= '9')
+n = (n * 10) + (*s - '0');
+else if (n > 0)
+break;
+} while (*s++);
+return (n *neg_pos);
+}
 
 /**
  * main - prints all arguments it receives.
@@ -17,8 +40,8 @@ return (1);
 else
 {
 int res, mul1, mul2;
-mul1 = atoi(argv[0]);
-mul2 = atoi(argv[1]);
+mul1 = _atoi(argv[0]);
+mul2 = _atoi(argv[1]);
 res = mul1 * mul2;
 printf("%d\n", res);
 return (0);
