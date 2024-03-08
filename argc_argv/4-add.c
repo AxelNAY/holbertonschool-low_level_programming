@@ -19,7 +19,7 @@ return (1);
 }
 
 /**
-* _atoi1 - Converts a string to an integer.
+* _atoi - Converts a string to an integer.
 * @s: pointer s.
 * Return: Values or 0
 */
