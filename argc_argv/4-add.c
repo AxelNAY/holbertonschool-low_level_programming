@@ -3,16 +3,19 @@
 
 /**
 * _isdigit - checks numbers
-* @c: Character to analyse.
+* @s: string.
 * Return: 1 if success or 0 otherwise.
 */
 
-int _isdigit(int c)
+int _isdigit(char *s)
 {
-if ((c >= 48) && (c <= 57))
-return (1);
-else
+int i;
+for (i = 0; s[i] != '\0'; i++)
+{
+if ((s <= 48) && (c >= 57))
 return (0);
+}
+return (1);
 }
 
 /**
