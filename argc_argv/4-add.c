@@ -49,9 +49,9 @@ return (n *neg_pos);
 int main(int argc, char *argv[])
 {
 int i, add, res = 0;
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
-if (_isdigit(argv[0]) != 1)
+if (_isdigit(argv[1]) != 1)
 printf("0\n");
 else if (_isdigit(argv[i]) != 1)
 {
