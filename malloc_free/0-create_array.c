@@ -21,6 +21,9 @@ char *s;
 s = malloc(size * sizeof(char));
 for (i = 0; i < size - 1; i++)
 s[i] = c;
+if (*s != '\0')
 return (s);
+else
+return ('\0');
 }
 }
