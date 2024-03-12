@@ -3,16 +3,17 @@
 #include <stdio.h>
 
 /**
-* free_grid - returns a pointer to a 2 dimensional array of integers.
-* @grid: return of the function alloc_grid.
-* @height: height.
+* malloc_checked - allocates memory using malloc.
+* @b: value.
+* Return: returns a pointer to the allocated memory.
 */
 
 void *malloc_checked(unsigned int b)
 {
-	int i;
+	int *s;
 
-	for (i = 0; i < height; i++)
-		free(grid[i]);
-	free(grid);
+	s = malloc(b);
+	if (s == 0)
+		return (NULL);
+	return (s);
 }
