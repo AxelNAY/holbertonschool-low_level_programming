@@ -3,10 +3,11 @@
 #include <stdlib.h>
 
 /**
- * new_dog - prints a struct dog.
+ * new_dog - creates a new dog.
  * @name: name of the dog.
  * @age: age of the dog.
  * @owner: owner of the dog.
+ * Return: the new dog.
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -18,40 +19,34 @@ dog_t *new_dog(char *name, float age, char *owner)
 		i++;
 	while (owner[j] != '\0')
 		j++;
-	
+
 	d = malloc(sizeof(dog_t));
-	
 	if (d == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
-
 	d->name = malloc(i * sizeof(d->name));
 	d->age = age;
 	d->owner = malloc(j * sizeof(d->owner));
-	
 	if (d->name == NULL)
-        {
+	{
 		free(d);
-                free(d->name);
-                return (NULL);
-        }
+		free(d->name);
+		return (NULL);
+	}
 	if (d->owner == NULL)
-        {
-                free(d);
-                free(d->owner);
-                return (NULL);
-        }
+	{
+		free(d);
+		free(d->owner);
+		return (NULL);
+	}
 
 	for (k = 0; k <= i; k++)
 		d->name[k] = name[k];
-
-        d->age = age;
-	
+	d->age = age;
 	for (k = 0; k <= j; k++)
-                d->owner[k] = owner[k];
+		d->owner[k] = owner[k];
 
 	return (d);
-
 }
