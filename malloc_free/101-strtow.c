@@ -15,22 +15,16 @@ char **strtow(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	while (str[len])
+	for (len = 0; str[len]; len++)
 	{
 		if (str[len] == ' ')
 			k = 0;
-		else if (k == 0)
-		{
-			k = 1;
+		else if (k++ == 0)
 			w++;
-		}
-		len++;
 	}
-
 	s = malloc(w + 1 * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
-
 	for (i = 0; i < len; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
@@ -52,6 +46,5 @@ char **strtow(char *str)
 		else if (l++ == 0)
 			firstlet = i;
 	}
-
 	return (s);
 }
