@@ -26,7 +26,7 @@ char **strtow(char *str)
 	{
 		if (str[i++] != " " || str[i] != " ")
 		{
-			s[i] = malloc(len + 1 * sizeof(char))
+			s[i] = malloc(len + 1 * sizeof(char));
 			for (j = 0; s[i][j]; j++)
 			{
 				s[i][j] = str[k];
