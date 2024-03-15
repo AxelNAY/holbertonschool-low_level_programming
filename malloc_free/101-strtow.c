@@ -16,15 +16,18 @@ char **strtow(char *str)
 	if (str == NULL)
 		return (NULL);
 	while (str[len])
-		len++;
+	{
+		if (str[len] != ' ' || str[len++] != ' ')
+			len++;
+	}
 
 	s = malloc(len + 1 * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
 
-	for (i = 0; i < len; i++)
+	for (i = 0; str[i]; i++)
 	{
-		if (str[i++] != " " || str[i] != " ")
+		if (str[i++] != ' ' || str[i] != ' ')
 		{
 			s[i] = malloc(len + 1 * sizeof(char));
 			for (j = 0; s[i][j]; j++)
