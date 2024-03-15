@@ -3,6 +3,27 @@
 #include <stdio.h>
 
 /**
+ * numb_word - find the number of words in a string
+ * @s: string.
+ * Return: numbers of words.
+ */
+
+int numb_word(char *s)
+{
+	int i, j = 0, w = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == ' ')
+			j = 0;
+		else if (j++ == 0)
+			w++;
+	}
+
+	return (w);
+}
+
+/**
 * strtow - splits a string into words.
 * @str: string.
 * Return: result.
@@ -10,41 +31,41 @@
 
 char **strtow(char *str)
 {
-	int i, l, w = 0, k = 0, len = 0, firstlet, lastlet;
-	char **s, *word;
+	char **s, *letter;
+	int i, w, k = 0, len = 0, c = 0, firstlet, lastlet;
 
-	if (str == NULL)
+	while (str[len])
+		len++;
+	w = numb_word(str);
+	if (w == 0)
 		return (NULL);
-	for (len = 0; str[len]; len++)
-	{
-		if (str[len] == ' ')
-			k = 0;
-		else if (k++ == 0)
-			w++;
-	}
+
 	s = malloc((w + 1) * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
-	for (i = 0; i < len; i++)
+
+	for (i = 0; i <= len; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
 		{
-			if (l)
+			if (c)
 			{
 				lastlet = i;
-				word = malloc((l + 1) * sizeof(char));
-				if (word == NULL)
+				letter = malloc((c + 1) * sizeof(char));
+				if (letter == NULL)
 					return (NULL);
-				for (; firstlet < lastlet; firstlet++)
-					*word++ = str[firstlet];
-				*word = '\0';
-				s[k] = word - l;
+				while (firstlet < lastlet)
+					*letter++ = str[firstlet++];
+				*letter = '\0';
+				s[k] = letter - c;
 				k++;
-				l = 0;
+				c = 0;
 			}
 		}
-		else if (l++ == 0)
+		else if (c++ == 0)
 			firstlet = i;
 	}
+	s[k] = NULL;
+
 	return (s);
 }
