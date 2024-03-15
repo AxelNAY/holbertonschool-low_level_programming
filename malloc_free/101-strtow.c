@@ -10,18 +10,21 @@
 
 char **strtow(char *str)
 {
-	int i, j, k = 0, len = 0;
+	int i, j, w = 0, k = 0, len = 0;
 	char **s;
 
 	if (str == NULL)
 		return (NULL);
 	while (str[len])
 	{
-		if (str[len] != ' ' || str[len++] != ' ')
-			len++;
+		if (str[len] != ' ')
+			i = 0;
+		else if (i = 0)
+			w++;
+		len++;
 	}
 
-	s = malloc(len + 1 * sizeof(char *));
+	s = malloc(w + 1 * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
 
@@ -35,10 +38,7 @@ char **strtow(char *str)
 				s[i][j] = str[k];
 				k++;
 			}
-			if (s[k] == '\0')
-				s[k++] = '\n';
 		}
 	}
-
 	return (s);
 }
