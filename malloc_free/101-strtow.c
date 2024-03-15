@@ -22,7 +22,7 @@ char **strtow(char *str)
 		else if (k++ == 0)
 			w++;
 	}
-	s = malloc(w + 1 * sizeof(char *));
+	s = malloc((w + 1) * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; i < len; i++)
@@ -32,7 +32,7 @@ char **strtow(char *str)
 			if (l)
 			{
 				lastlet = i;
-				word = malloc(l + 1 * sizeof(char));
+				word = malloc((l + 1) * sizeof(char));
 				if (word == NULL)
 					return (NULL);
 				for (; firstlet < lastlet; firstlet++)
