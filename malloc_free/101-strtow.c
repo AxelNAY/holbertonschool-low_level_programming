@@ -22,15 +22,19 @@ char **strtow(char *str)
 	if (s == NULL)
 		return (NULL);
 
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < len; i++)
 	{
-		for (j = 0; av[i][j]; j++)
+		if (str[i++] != " " || str[i] != " ")
 		{
-			s[k] = av[i][j];
-			k++;
+			s[i] = malloc(len + 1 * sizeof(char))
+			for (j = 0; s[i][j]; j++)
+			{
+				s[i][j] = str[k];
+				k++;
+			}
+			if (s[k] == '\0')
+				s[k++] = '\n';
 		}
-		if (s[k] == '\0')
-			s[k++] = '\n';
 	}
 
 	return (s);
