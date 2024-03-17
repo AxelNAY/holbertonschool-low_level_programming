@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * _realloc - reallocates a memory block using malloc and free.
+ * *_realloc - reallocates a memory block using malloc and free.
  * @ptr: pointer.
  * @old_size: old size of the pointer.
  * @new_size: new size of the pointer.
+ * Return: the new pointer.
  */
-
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -29,7 +29,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (ptr);
 	if (new_size == 0 && ptr != NULL)
 	{
-		free (ptr);
+		free(ptr);
 		return (NULL);
 	}
 	if (new_size > old_size)
@@ -42,7 +42,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		for (i = 0; i < new_size; i++)
 			s[i] = old_ptr[i];
 	}
-	
+
 	free(ptr);
 	return (s);
 }
