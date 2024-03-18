@@ -15,5 +15,4 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	for (i = 0; i <= size - 1; i++)
 		action(array[i]);
-	free(array);
 }
