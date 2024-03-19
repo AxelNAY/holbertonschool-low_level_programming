@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - prints strings, followed by a new line.
+ * print_strings - prints strings, followed by a new line.
  * @separator: separator.
  * @n: number of parameters.
  * @...: variables parameters.
