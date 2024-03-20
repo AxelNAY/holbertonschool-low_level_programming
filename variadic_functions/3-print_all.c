@@ -12,22 +12,29 @@
 void print_all(const char * const format, ...);
 {
 	va_list ap;
-	int len = 0, i = 0;
-	char c;
-	int i;
-	float f;
-	char *s;
+	int i = 0;
+	int j;
+	char *str;
+	char *s = {"c", "i", "f", "s"};
+	char *inclu = {"%c", "%d", "%f", "%s"};
+	char *list = {"char", "int", "float", "char *"}
 
-	va_start(ap, n);
-	for (i = 0; i < n; i++)
+	va_start(ap, format);
+	while (format[i])
 	{
-		s = va_arg(ap, char *);
-		if (s == NULL)
-			printf("(nil)");
-		else
-			printf("%s", s);
-		if (i < n - 1 && separator != NULL)
-			printf("%s", separator);
+		j = 0;
+		while (s[j])
+		{
+			if (format[i] == s[j])
+			{
+				str = va_arg(ap, list[i]);
+				printf("%s", inclu[j], str);
+			}
+			j++;
+		}
+		if (format[i++] == NULL)
+			printf(", ");
+		i++;
 	}
 	printf("\n");
 	va_end(ap);
