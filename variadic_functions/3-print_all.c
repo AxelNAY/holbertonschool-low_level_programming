@@ -54,10 +54,9 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	int i = 0;
 	int j;
-	char c;
-	int i;
-	float f;
 	char *str;
+
+	va_start(ap, );
 	char s[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -65,16 +64,14 @@ void print_all(const char * const format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
-	char *list = {"char", "int", "float", "char *"}
 
-	va_start(ap, format);
 	while (format[i] != NULL)
 	{
 		j = 0;
 		while (s[j])
 		{
 			if (format[i] == s[j].s[0])
-				return (ops[i].f);
+				return (s[i].f);
 		}
 	}
 	printf("\n");
