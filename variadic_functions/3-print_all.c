@@ -9,13 +9,13 @@
  * @...: variables parameters.
  */
 
-void print_all(const char * const format, ...);
+void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0;
 	int j;
 	char *str;
-	char *s = {"c", "i", "f", "s"};
+	char *s = {'c', 'i', 'f', 's'};
 	char *inclu = {"%c", "%d", "%f", "%s"};
 	char *list = {"char", "int", "float", "char *"}
 
