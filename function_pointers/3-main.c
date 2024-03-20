@@ -22,14 +22,14 @@ int main(int argc, char *argv[])
 	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	o = get_op_func(argv[2]);
 	if (o == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	a = atoi(argv[1]);
