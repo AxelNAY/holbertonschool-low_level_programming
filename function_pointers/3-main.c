@@ -17,16 +17,19 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
+		exit(98);
 	}
 	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
+		exit(98);
 	}
 
 	o = get_op_func(argv[2]);
 	if (o == NULL)
 	{
 		printf("Error\n");
+		exit(98);
 	}
 
 	a = atoi(argv[1]);
