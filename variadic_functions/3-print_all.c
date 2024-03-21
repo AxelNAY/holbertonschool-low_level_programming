@@ -56,8 +56,8 @@ void print_all(const char * const format, ...)
 	int j;
 	char *str;
 
-	va_start(ap, );
-	char s[] = {
+	va_start(ap, format);
+	pr_t s[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
@@ -70,7 +70,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (s[j])
 		{
-			if (format[i] == s[j].s[0])
+			if (format[i] == s[j].pr[0])
 				return (s[i].f);
 		}
 	}
