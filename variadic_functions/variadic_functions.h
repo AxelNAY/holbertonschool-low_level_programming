@@ -10,16 +10,16 @@
 typedef struct pr
 {
 	char *pr;
-	void (*f)(va_list);
+	void (*f)(va_list ap);
 } pr_t;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
-void print_char(char c);
-void print_int(int i);
-void print_float(float f);
-void print_string(char *str);
+void print_char(va_list);
+void print_int(va_list);
+void print_float(va_list);
+void print_string(va_list);
 
 #endif

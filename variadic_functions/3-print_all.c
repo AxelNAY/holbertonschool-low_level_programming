@@ -8,7 +8,7 @@
  * @c: character.
  */
 
-void print_char(char c)
+void print_char(va_list ap)
 {
 	printf("%c", c);
 }
@@ -18,7 +18,7 @@ void print_char(char c)
  * @i: integer.
  */
 
-void print_int(int i)
+void print_int(va_list ap)
 {
 	printf("%d", i);
 }
@@ -28,7 +28,7 @@ void print_int(int i)
  * @f: float.
  */
 
-void print_float(float f)
+void print_float(va_list ap)
 {
 	printf("%f", f);
 }
@@ -38,7 +38,7 @@ void print_float(float f)
  * @str: string.
  */
 
-void print_string(char *str)
+void print_string(va_list ap)
 {
 	if (str == NULL)
 	{
