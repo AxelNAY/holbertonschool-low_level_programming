@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int num1, num2;
 	int (*o)(int, int);
 
 	if (argc != 4)
@@ -32,10 +32,10 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 
-	printf("%d\n", o(a, b));
+	printf("%d\n", o(num1, num2));
 
 	return (0);
 }
