@@ -40,6 +40,11 @@ void print_float(float f)
 
 void print_string(char *str)
 {
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
         printf("%s", str);
 }
 
@@ -68,9 +73,9 @@ void print_all(const char * const format, ...)
 	while (format[i] != NULL)
 	{
 		j = 0;
-		while (s[j])
+		while (s[j].pr)
 		{
-			if (format[i] == s[j].pr[0])
+			if (format[i] == s[j].pr)
 				return (s[i].f);
 		}
 	}
