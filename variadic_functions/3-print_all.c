@@ -5,47 +5,47 @@
 
 /**
  * print_char - print a character.
- * @c: character.
+ * @ap: character.
  */
 
 void print_char(va_list ap)
 {
-	printf("%c", c);
+	printf("%c", ap);
 }
 
 /**
  * print_int - print an integer.
- * @i: integer.
+ * @ap: integer.
  */
 
 void print_int(va_list ap)
 {
-	printf("%d", i);
+	printf("%d", ap);
 }
 
 /**
  * print_float - print a float.
- * @f: float.
+ * @ap: float.
  */
 
 void print_float(va_list ap)
 {
-	printf("%f", f);
+	printf("%f", ap);
 }
 
 /**
  * print_string - print a string.
- * @str: string.
+ * @ap: string.
  */
 
 void print_string(va_list ap)
 {
-	if (str == NULL)
+	if (ap == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
-        printf("%s", str);
+        printf("%s", ap);
 }
 
 /**
@@ -58,7 +58,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0;
-	int j;	
+	int j;
 
 	va_start(ap, format);
 	pr_t s[] = {
