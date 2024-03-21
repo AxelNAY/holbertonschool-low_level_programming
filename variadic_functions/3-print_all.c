@@ -58,8 +58,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0;
-	int j;
-	char *str;
+	int j;	
 
 	va_start(ap, format);
 	pr_t s[] = {
@@ -70,14 +69,16 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
-	while (format[i] != NULL)
+	while (format[i])
 	{
 		j = 0;
 		while (s[j].pr)
 		{
 			if (format[i] == s[j].pr)
 				return (s[i].f);
+			j++;
 		}
+		i++;
 	}
 	printf("\n");
 	va_end(ap);
