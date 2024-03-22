@@ -8,7 +8,7 @@
  * @f: The function associated
  */
 
-typedef struct pr_t
+typedef struct pr
 {
 	char pr;
 	void (*f)(va_list);
