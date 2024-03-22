@@ -20,13 +20,12 @@ void print_all(const char * const format, ...)
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
-		{'s', print_string},
-		{'\0', NULL}
+		{'s', print_string}
 	};
 
 	va_start(ap, format);
 	i = 0;
-	while (format[i] != '\0' && format != NULL)
+	while (format[i] && format)
 	{
 		j = 0;
 		while (s[j].pr)
