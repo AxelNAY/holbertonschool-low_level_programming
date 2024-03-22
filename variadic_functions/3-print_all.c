@@ -40,10 +40,12 @@ void print_float(va_list ap)
 
 void print_string(va_list ap)
 {
-	char *s = va_arg(ap, char *);
+	char *s;
+	s = va_arg(args, char*);
 	if (s == NULL)
 	{
-		s = "(nil)";
+		printf("(nil)");
+		return;
 	}
 	printf("%s", s);
 }
