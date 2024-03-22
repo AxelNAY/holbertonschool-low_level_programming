@@ -61,10 +61,11 @@ void print_all(const char * const format, ...)
 	char *separator;
 
 	pr_t s[] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string},
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+		{NULL, NULL}
 	};
 
 	va_start(ap, format);
@@ -75,7 +76,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (s[j].pr)
 		{
-			if (format[i] == s[j].pr)
+			if (format[i] == *(s[j].pr))
 			{
 				printf("%s", separator);
 				s[j].f(ap);
@@ -87,6 +88,4 @@ void print_all(const char * const format, ...)
 	}
 	va_end(ap);
 	printf("\n");
-
-	return (0);
 }

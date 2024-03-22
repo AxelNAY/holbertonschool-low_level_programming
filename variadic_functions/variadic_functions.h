@@ -10,7 +10,7 @@
 
 typedef struct pr_t
 {
-	char pr;
+	char *pr;
 	void (*f)(va_list);
 } pr_t;
 
