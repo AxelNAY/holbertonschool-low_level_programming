@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
 #include "3-print_type.c"
 
