@@ -1,5 +1,6 @@
 #ifndef variadic_functions_h
 #define variadic_functions_h
+#include <stdarg.h>
 
 /**
  * struct pr - Struct pr
@@ -7,10 +8,10 @@
  * @f: The function associated
  */
 
-typedef struct pr
+typedef struct pr_t
 {
-	char *pr;
-	void (*f)(va_list ap);
+	char pr;
+	void (*f)(va_list);
 } pr_t;
 
 int sum_them_all(const unsigned int n, ...);

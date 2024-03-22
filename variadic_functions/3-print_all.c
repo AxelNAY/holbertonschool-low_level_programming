@@ -10,7 +10,7 @@
 
 void print_char(va_list ap)
 {
-	printf("%c", ap);
+	vprintf("%c", ap);
 }
 
 /**
@@ -20,7 +20,7 @@ void print_char(va_list ap)
 
 void print_int(va_list ap)
 {
-	printf("%d", ap);
+	vprintf("%d", ap);
 }
 
 /**
@@ -30,7 +30,7 @@ void print_int(va_list ap)
 
 void print_float(va_list ap)
 {
-	printf("%f", ap);
+	vprintf("%f", ap);
 }
 
 /**
@@ -45,7 +45,7 @@ void print_string(va_list ap)
 		printf("(nil)");
 		return;
 	}
-        printf("%s", ap);
+        vprintf("%s", ap);
 }
 
 /**
@@ -57,25 +57,25 @@ void print_string(va_list ap)
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i = 0;
+	int i;
 	int j;
 
-	va_start(ap, format);
 	pr_t s[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string},
-		{NULL, NULL}
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string}
 	};
 
-	while (format[i])
+	va_start(ap, format);
+	i = 0;
+	while (format[i] && format)
 	{
 		j = 0;
 		while (s[j].pr)
 		{
 			if (format[i] == s[j].pr)
-				return (s[i].f);
+				s[i].f(ap);
 			j++;
 		}
 		i++;
