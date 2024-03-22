@@ -45,7 +45,7 @@ void print_string(va_list ap)
 		printf("(nil)");
 		return;
 	}
-        printf("%s", va_arg(ap, char *));
+	printf("%s", va_arg(ap, char *));
 }
 
 /**
@@ -64,7 +64,8 @@ void print_all(const char * const format, ...)
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
-		{'s', print_string}
+		{'s', print_string},
+		{NULL, NULL}
 	};
 
 	va_start(ap, format);
