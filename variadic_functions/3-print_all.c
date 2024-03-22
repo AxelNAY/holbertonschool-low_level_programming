@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i, j;
-	char *separator;
+	char *separator = "";
 
 	pr_t s[] = {
 		{'c', print_char},
@@ -26,7 +26,6 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 	i = 0;
-	separator = "";
 	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
