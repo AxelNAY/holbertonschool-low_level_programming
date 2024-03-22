@@ -2,9 +2,9 @@
 #include "3-print_type.c"
 
 /**
- * print_all - prints anything.
- * @format: format.
- * @...: variables parameters.
+ * print_all - function that prints anything.
+ *
+ * @format: types
  */
 
 void print_all(const char * const format, ...)
@@ -21,13 +21,15 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
+
 	i = 0;
-	while (format[i] && format)
+
+	while (format && format[i])
 	{
 		j = 0;
 		while (s[j].pr)
 		{
-			if (format[i] == s[j].pr)
+			if (s[j].pr == format[i])
 			{
 				printf("%s", separator);
 				s[j].f(ap);
