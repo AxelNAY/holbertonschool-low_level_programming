@@ -64,11 +64,10 @@ void print_all(const char * const format, ...)
 	char *separator;
 
 	pr_t s[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string},
-		{NULL, NULL}
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string}
 	};
 
 	va_start(ap, format);
