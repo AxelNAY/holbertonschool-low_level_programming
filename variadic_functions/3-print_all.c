@@ -67,9 +67,6 @@ void print_all(const char * const format, ...)
 		{'s', print_string},
 	};
 
-	if (format == NULL)
-		return;
-
 	va_start(ap, format);
 	i = 0;
 	separator = "";
@@ -90,4 +87,6 @@ void print_all(const char * const format, ...)
 	}
 	va_end(ap);
 	printf("\n");
+
+	return;
 }
