@@ -74,7 +74,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	i = 0;
 	separator = "";
-	while (format[i] && format)
+	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
 		while (s[j].pr)
