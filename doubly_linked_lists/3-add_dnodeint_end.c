@@ -32,7 +32,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		update = update->next;
 
 	update->next = new;
-	new->prev = NULL;
+	new->prev = update;
 
 	return (new);
 }
