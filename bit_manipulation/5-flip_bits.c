@@ -14,6 +14,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	if (n == m)
 		return (numb);
-	
+
 	return (numb + flip_bits(n >> 1, m >> 1));
 }
