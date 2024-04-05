@@ -15,7 +15,8 @@ int get_bit(unsigned long int n, unsigned int index);
 int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
-unsigned int print_f5(unsigned long int n);
-unsigned int print_f10(unsigned long int n);
+unsigned long int print_mil(unsigned long int n);
+unsigned long int print_million(unsigned long int n);
+unsigned long int print_milliard(unsigned long int n);
 
 #endif

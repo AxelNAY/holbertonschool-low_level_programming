@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * print_f10 - print the first five decimals.
+ * print_milliard - print the first numbers
+ * from 10 millions to almost 5 milliards.
  * @n: number.
- * Return: result.
+ * Return: the restant number.
  */
 
-unsigned long int print_f5(unsigned long int n)
+unsigned long int print_milliard(unsigned long int n)
 {
-	unsigned long int test, pair, dec;
+	unsigned long int test, dec;
 
 	if (n > 999999999)
 	{
 		dec = n * 0.000000001;
-		pair = dec;
 		test = dec * 0.2;
-		if (pair == (test * 2))
+		if (dec == (test * 2))
 			_putchar('0');
 		else
 			_putchar('1');
@@ -24,74 +24,80 @@ unsigned long int print_f5(unsigned long int n)
 	if (n > 99999999)
 	{
 		dec = n * 0.00000001;
-		pair = dec;
 		test = dec * 0.2;
-		if (pair == (test * 2))
+		if (dec == (test * 2))
 			_putchar('0');
 		else
 			_putchar('1');
 		n = n - (dec * 100000000);
 	}
-	if (n > 9999999)
-	{
-                dec = n * 0.000001;
-                pair = dec;
-                test = dec * 0.2;
-                if (pair == (test * 2))
-                        _putchar('0');
-                else
-                        _putchar('1');
-	}
-	if (n > 999999)
-        {
-                dec = n * 0.01;
-                pair = dec;
-                test = dec * 0.2;
-                if (pair == (test * 2))
-                        _putchar('0');
-                else
-                        _putchar('1');
-        }
-
-	dec = n * 0.1;
-	pair = dec;
+	dec = n * 0.0000001;
 	test = dec * 0.2;
-	if (pair == (test * 2))
+	if (dec == (test * 2))
 		_putchar('0');
 	else
 		_putchar('1');
-	n = n - (dec * 10);
-
+	n = n - (dec * 10000000);
 	return (n);
 }
 
 /**
- * print_f5 - print the first five decimals.
+ * print_million - print the first numbers
+ * from 10 milles to almost 10 millions.
  * @n: number.
- * Return: result.
+ * Return: the restant number.
  */
 
-unsigned long int print_f5(unsigned long int n)
+unsigned long int print_million(unsigned long int n)
 {
-	unsigned long int test, pair, dec;
+	unsigned long int test, dec;
 
-	if (n > 9999)
+	if (n > 999999)
 	{
-		dec = n * 0.0001;
-		pair = dec;
+		dec = n * 0.000001;
 		test = dec * 0.2;
-		if (pair == (test * 2))
+		if (dec == (test * 2))
 			_putchar('0');
 		else
 			_putchar('1');
-		n = n - (dec * 10000);
+		n = n - (dec * 1000000);
 	}
+	if (n > 99999)
+	{
+		dec = n * 0.00001;
+		test = dec * 0.2;
+		if (dec == (test * 2))
+			_putchar('0');
+		else
+			_putchar('1');
+		n = n - (dec * 100000);
+	}
+	dec = n * 0.0001;
+	test = dec * 0.2;
+	if (dec == (test * 2))
+		_putchar('0');
+	else
+		_putchar('1');
+	n = n - (dec * 10000);
+	return (n);
+}
+
+/**
+ * print_mil - print the first numbers
+ * from 10 to almost 10 milles.
+ * @n: number.
+ * Return: the restant number.
+ */
+
+unsigned long int print_mil(unsigned long int n)
+{
+	unsigned long int test, dec;
+
 	if (n > 999)
 	{
 		dec = n * 0.001;
-		pair = dec;
 		test = dec * 0.2;
-		if (pair == (test * 2))
+		if (dec == (test * 2))
 			_putchar('0');
 		else
 			_putchar('1');
@@ -100,24 +106,20 @@ unsigned long int print_f5(unsigned long int n)
 	if (n > 99)
 	{
 		dec = n * 0.01;
-		pair = dec;
 		test = dec * 0.2;
-		if (pair == (test * 2))
+		if (dec == (test * 2))
 			_putchar('0');
 		else
 			_putchar('1');
 		n = n - (dec * 100);
 	}
-
 	dec = n * 0.1;
-	pair = dec;
 	test = dec * 0.2;
-	if (pair == (test * 2))
+	if (dec == (test * 2))
 		_putchar('0');
 	else
 		_putchar('1');
 	n = n - (dec * 10);
-
 	return (n);
 }
 
@@ -130,10 +132,12 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int pair;
 
-	if (n > 99999)
-		print_f10(n);
-	else if (n > 9)
-		n = print_f5(n);
+	if (n > 9999999)
+		n = print_milliard(n);
+	if (n > 9999)
+		n = print_million(n);
+	if (n > 9)
+		n = print_mil(n);
 
 	pair = n;
 	n = n * 0.2;
